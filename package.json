@@ -1,10 +1,13 @@
 {
-  "name": "mileage_backend",
+  "name": "mileage-backend",
   "version": "1.0.0",
   "description": "odometer for Jame's mom",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "sls deploy -v",
+    "start": "serverless offline start"
+    
   },
   "author": "Iggy",
   "license": "ISC",
@@ -14,9 +17,13 @@
     "express": "^4.18.1",
     "js-sha256": "^0.9.0",
     "jwt-then": "^1.0.1",
-    "mongoose": "^6.5.0"
+    "mongoose": "^6.5.0",
+    "serverless-dotenv-plugin": "^4.0.2",
+    "serverless-http": "^3.1.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "serverless-dotenv": "^1.0.0-beta.2",
+    "serverless-offline": "^11.6.0"
   }
 }
